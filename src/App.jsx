@@ -373,7 +373,6 @@ function App() {
             Wishing you more laughter, more adventures, and more late-night talks. May you enjoy life filled with love, joy, and happiness that you deserve.
             
             Happy Birthday!!
-            
             ---Nicolai >_<`}
           </p>
         </div>
