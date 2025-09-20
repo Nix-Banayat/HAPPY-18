@@ -1,47 +1,63 @@
+import catIcon from "./images/cat-icon.png";
+import sadCatIcon from "./images/sad-cat-icon.png";
+import pictureIcon from "./images/picture-icon.png";
+import flowersIcon from "./images/flowers-icon.png";
+import padlocksIcon from "./images/padlocks-icon.png";
+import letterIcon from "./images/letter-icon.png";
+import cuteCharacterIcon from "./images/cute-character-icon.png";
+
+import photo1 from "./images/photo-1.jpg";
+import photo2 from "./images/photo-2.jpg";
+import photo3 from "./images/photo-3.jpg";
+import photo4 from "./images/photo-4.jpg";
+import photo5 from "./images/photo-5.jpg";
+import photo6 from "./images/photo-6.jpg";
+import photo7 from "./images/photo-7.jpg";
+import photo8 from "./images/photo-8.jpg";
 import React, { useState } from "react";
 import "./index.css";
 
 const memories = [
   {
     id: 1,
-    image: "/photo-1.jpg",
+    image: photo1,
     text: "May nagpapicture saken eme */>_</*",
     rotation: "rotate-3",
   },
   {
     id: 2,
-    image: "/photo-2.jpg",
+    image: photo2,
     text: "You still remember this??",
     rotation: "-rotate-6",
   },
   {
     id: 3,
-    image: "/photo-3.jpg",
+    image: photo3,
     text: "Happy Kaithe",
     rotation: "rotate-4",
   },
   {
     id: 4,
-    image: "/photo-4.jpg",
+    image: photo4,
     text: "Sportsfest with youu!",
     rotation: "-rotate-2",
   },
   {
     id: 5,
-    image: "/photo-5.jpg",
+    image: photo5,
     text: "Nagpapicture ulet 🙄",
     rotation: "rotate-5",
   },
   {
     id: 6,
-    image: "/photo-6.jpg",
+    image: photo6,
     text: "Luhh, hinigit ako sumama",
     rotation: "-rotate-4",
   },
-  { id: 7, image: "/photo-7.jpg", text: "SM Date!", rotation: "rotate-2" },
+  { id: 7, image: photo7, text: "SM Date!", rotation: "rotate-2" },
   {
     id: 8,
-    image: "/photo-8.jpg",
+    image: photo8,
     text: "Kaithe the bully😃",
     rotation: "-rotate-5",
   },
@@ -104,7 +120,7 @@ function App() {
     return (
       <div className="flex flex-col justify-center items-center min-h-screen text-center">
         <img
-          src="/cat-icon.png"
+          src= {catIcon}
           alt="cat with a heart"
           className="w-16 h-16 mb-4"
         />
@@ -148,7 +164,7 @@ function App() {
             className="flex flex-col items-center justify-center p-6 border-2 border-red-800 rounded-2xl aspect-square cursor-pointer hover:bg-red-50 transition duration-300"
           >
             <img
-              src="/picture-icon.png"
+              src= {pictureIcon}
               alt="picture icon"
               className="w-24 h-24"
             />
@@ -159,7 +175,7 @@ function App() {
             className="flex flex-col items-center justify-center p-6 border-2 border-red-800 rounded-2xl aspect-square cursor-pointer hover:bg-red-50 transition duration-300"
           >
             <img
-              src="/flowers-icon.png"
+              src= {flowersIcon}
               alt="flowers icon"
               className="w-24 h-24"
             />
@@ -170,7 +186,7 @@ function App() {
             className="flex flex-col items-center justify-center p-6 border-2 border-red-800 rounded-2xl aspect-square cursor-pointer hover:bg-red-50 transition duration-300"
           >
             <img
-              src="/padlocks-icon.png"
+              src= {padlocksIcon}
               alt="padlocks icon"
               className="w-24 h-24"
             />
@@ -181,7 +197,7 @@ function App() {
             className="flex flex-col items-center justify-center p-6 border-2 border-red-800 rounded-2xl aspect-square cursor-pointer hover:bg-red-50 transition duration-300"
           >
             <img
-              src="/letter-icon.png"
+              src= {letterIcon}
               alt="letter icon"
               className="w-24 h-24"
             />
@@ -192,7 +208,7 @@ function App() {
   } else if (currentPage === "no") {
     return (
       <div className="flex flex-col justify-center items-center min-h-screen text-center">
-        <img src="/sad-cat-icon.png" alt="sad cat" className="w-20 h-20 mb-6" />
+        <img src= {sadCatIcon} alt="sad cat" className="w-20 h-20 mb-6" />
 
         <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-pink-600 mb-8">
           I promise you'll like it
@@ -272,7 +288,7 @@ function App() {
           {/* Central Flower Image and Text */}
           <div className="flex-shrink-0 flex flex-col items-center justify-center my-8 md:my-0">
             <img
-              src="/cute-character-icon.png"
+              src= {cuteCharacterIcon}
               alt="cute character with flowers"
               className="w-48 h-auto"
             />
